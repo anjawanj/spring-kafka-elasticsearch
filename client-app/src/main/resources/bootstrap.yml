@@ -3,4 +3,4 @@ spring:
     name: client-app
 
 server:
-    port: 0
+    port: 8081

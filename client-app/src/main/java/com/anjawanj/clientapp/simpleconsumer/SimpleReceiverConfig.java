@@ -3,7 +3,6 @@ package com.anjawanj.clientapp.simpleconsumer;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.anjawanj.clientapp.avroconsumer.AvroDeserializer;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.springframework.beans.factory.annotation.Value;
@@ -23,6 +22,7 @@ public class SimpleReceiverConfig {
 
   @Value("${kafka.group-id}")
   private String groupId;
+
 
   @Bean
   public Map<String, Object> simpleConsumerConfigs() {
